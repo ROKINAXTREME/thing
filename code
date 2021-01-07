@@ -1,0 +1,59 @@
+class student:
+    def __init__(self, height, name, weight):
+        self.height=height
+        self.weight=weight
+        self.name=name
+    def eating(self, food):
+        return "{} is eating {}".format(self.name, food)
+Aarav=student(56, 'Aarav', 95.8)
+Vihaan=student(45, "Vihaan", 45.2)
+print('Height of {} is {}'.format(Aarav.name, Aarav.height))
+print('Height of {} is {}'.format(Vihaan.name, Vihaan.height))
+print(Aarav.eating('apple'))
+print(Vihaan.eating('cheese'))
+
+class democlass:
+    '''this is my docstring. this explains about the class'''
+print(democlass.__doc__)
+
+class myNewClass:
+    '''this demonstrates the creation of objects'''
+    num=100
+    def hello(self):
+        print('hi')
+obj=myNewClass()
+print(obj.num)
+obj.hello()
+print(myNewClass.__doc__)
+
+class democlass:
+    '''constructor'''
+    def __init__(self):
+        '''initializing instance variable'''
+        self.num=100
+    '''a method'''
+    def read_number(self):
+        print(self.num)
+'''creating class object'''
+obj=democlass()
+'''calling the instance method using the object obj'''
+obj.read_number()
+
+'''default constuctor
+parameterized constructor'''
+class demoClass:
+    num=101
+    def read_number(self):
+        print(self.num)
+obj=demoClass()
+obj.read_number()
+
+class democlass:
+    num=101
+    def __init__(self, data):
+        self.num=data
+    def readNumber(self):
+        print(self.num)
+obj=democlass(55)
+obj.readNumber()
+#print(democlass)
